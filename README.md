@@ -11,23 +11,10 @@
 - 📊 5+ years of **stock market trading** experience (especially Nifty Options).
 - 🧾 Creator of **TheRookieTraders**, a social trading platform for traders.
 - 🌱 Learning: DSA in JavaScript | ML with JavaScript | Building trading tools & analytics.
-- 💪 Fitness enthusiast — regular gym-goer, focused on muscle gain & performance.
+- 💪 Fitness enthusiast .
 
 ---
 
-## 🛠️ Tech Stack
-
-**Frontend**  
-`HTML` `CSS` `Tailwind CSS` `Bootstrap` `JavaScript` `React` `Material UI` `React Router`
-
-**Backend**  
-`Node.js` `Express.js` `MongoDB` `REST APIs` `Authentication & Cookies` `JWT`
-
-**Tools & Platforms**  
-`Git` `GitHub` `Vite` `Postman` `PM2` `NGINX` `Oracle Cloud` `Hostinger`  
-`Google Sheets Automation` `Custom Dashboards` `CORS Proxy Setup`
-
----
 
 ## 📈 Projects I'm Proud Of
 
@@ -59,21 +46,6 @@ Built with a vision to help Indian retail traders grow with data-driven decision
 - 🧪 Exploring machine learning via JavaScript
 
 ---
-
-## 📬 Let's Connect
-
-- 🔗 [LinkedIn](https://www.linkedin.com/in/praveen760/)
-- 📧 ypraveen760@gmail.com
-- 🧑‍💻 [GitHub](https://github.com/ypraveen760)
-- 🌐 [TheRookieTraders.in](https://www.rookietraders.in)
-
----
-
-_“Code. Trade. Repeat.”_
-
-
-
-
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ypraveen760) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/praveen760) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@therookietradersofficial) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ypraveen760@gmail.com) 
 
