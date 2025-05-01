@@ -1,6 +1,6 @@
 # 👋 Hey there, I'm Praveen Yadav!
 
-🚀 A passionate **Front-End Developer**, skilled in the **MERN Stack**, building intuitive web apps and dashboards that solve real-world problems — especially in **trading** and **finance**.
+🚀 A passionate **Full Stack Developer**, skilled in the **MERN Stack**, building intuitive web apps and dashboards that solve real-world problems — especially in **trading** and **finance**.
 
 ---
 
