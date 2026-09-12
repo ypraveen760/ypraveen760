@@ -1,62 +1,88 @@
-# 👋 Hey there, I'm Praveen Yadav!
+# Praveen Yadav
 
-🚀 A passionate **Full Stack Developer**, skilled in the **MERN Stack**, building intuitive web apps and dashboards that solve real-world problems — especially in **trading** and **finance**.
+**Full-Stack Product Engineer** · Mumbai, India
 
----
+I build products from interface to infrastructure — React applications, Node.js services, the databases behind them, realtime systems, and the servers they run on. Most of my work is multi-tenant platforms where the hard part isn't the screen: it's authorization that fails closed, realtime that survives contact with reality, and knowing what happens after deployment.
 
-## 💼 About Me
-
-- 🧠 I love **coding**, **trading**, and solving complex problems.
-- 🧑‍💻 Currently working as a MERN Stack Developer at **INFORMATIC CONNECTING TECH PRIVATE LIMITED**.
-- 📊 5+ years of **stock market trading** experience (especially Nifty Options).
-- 🧾 Creator of **TheRookieTraders**, a social trading platform for traders.
-- 🌱 Learning: DSA in JavaScript | ML with JavaScript | Building trading tools & analytics.
-- 💪 Fitness enthusiast .
+Currently a Full Stack Developer at **Informatic Connecting Tech Pvt. Ltd.**, working across an enterprise HRMS platform — React and Node modules, database migrations, realtime services, code reviews, releases and production troubleshooting.
 
 ---
 
+## Selected work
 
-## 📈 Projects I'm Proud Of
+### [SOL Assists](https://solassists.com) · multi-tenant education platform
+Six services behind one application, serving office staff, teachers, students and guardians — each seeing a different product, from one server-enforced authorization model. Every request resolves identity → active access → permission → data scope, and the tenant context comes from the session, never the request.
+`72 data models` · `246 REST routes` · `~1,180 tests` · [solassists.com](https://solassists.com) · [app](https://app.solassists.com)
+<sub>React 19 · Node 24 · Express · Prisma · PostgreSQL · Redis · SSE · WebRTC · Oracle Cloud · Cloudflare · Prometheus/Grafana/Loki</sub>
 
-### 🔥 [TheRookieTraders](https://www.rookietraders.in)  
-A social trading platform with:
-- Stock Scanner
-- Real-time Collaboration
-- Portfolio Tracker
-- Option Chain & Analytics
-- Built with ❤️ using React + Node + MongoDB
+### [QA Flow](https://qaflow.projectdock.in) · delivery & QA platform
+Where a feature, its acceptance criteria, its tests, its defects and the conversation about them are one linked graph — enforced by an 11-stage workflow engine written as pure functions. Includes audio/video calling built from scratch on Socket.IO signalling, no Twilio or Agora.
+`93 REST endpoints` · `271 automated tests` · `~46k lines` · solo-built over 9 months · [qaflow.projectdock.in](https://qaflow.projectdock.in)
+<sub>React 19 · Vite · Node · Express · MongoDB · Socket.IO (2 namespaces) · WebRTC · COTURN · AWS S3</sub>
 
-### 🎬 TubeMate  
-A YouTube clone with search functionality using the YouTube API.  
-🔧 Built with React, Vite, and API integrations.
+### TheRookieTraders · market research platform
+A live NSE feed turned into a multi-user research workspace: twelve explainable scanners, open-interest analytics and candlestick charts. Every analytic is computed **once per minute** by a data service and served from precomputed tables, so cost doesn't grow with users.
 
-### 🧾 DigiMenuHub  
-Swiggy-style UI using Swiggy API to showcase restaurant menus and details.
+It is **read-only by design and cannot place a trade** — the broker adapter exposes a frozen allowlist of read operations, and a test sweeps every source path for order methods and fails the build if one is reachable. Research and data only; not investment advice.
+`12 scanners` · `50 tests` · `~1% CPU at 5,000 concurrent viewers`¹ · deployment rolling out
+<sub>React 19 · Node 24 · SQLite (node:sqlite) · Server-Sent Events · Auth.js · nginx · PM2</sub>
 
-### 📊 Trading Journal & Analytics Platform (In Progress)  
-Helps traders track trades, analyze data, and gain insights using dashboards.  
-Built with a vision to help Indian retail traders grow with data-driven decision making.
+### OrgzStack · enterprise HRMS *(professional work)*
+A multi-tenant workforce platform — attendance, payroll and statutory reporting, leave, loans, approvals, RBAC, audit trails, live location. I'm a **major contributor** to the React SPA and core API within a team, and **sole author** of three services inside it: the socket/notification/location microservice, the internal admin console, and the observability stack.
+`11 provisioned Grafana dashboards` · `Redis-backed socket fan-out` · `Haversine geofencing with batched persistence`
+<sub>React · Node · MongoDB · Socket.IO · Redis · WebRTC · FCM · Docker · Terraform · AWS · Prometheus/Grafana/Loki</sub>
+
+### Candidate Search & Relevance Engine · search service *(internal)*
+A search service that ranks candidates against a requisition on five weighted factors and returns, with every result, the breakdown of *why* it scored what it did. Scores normalise against the criteria actually supplied — so a skills-only search stays comparable to a fully-specified one.
+`222 curated synonym groups` · `typo tolerance` · `scheduled + queued index sync`
+<sub>Node · Express · MongoDB · self-hosted Meilisearch</sub>
+
+### [IPS Tech US](https://ipsincorp.com) · corporate staffing website *(professional work)*
+Sole frontend developer. Nineteen detail pages — seven services, twelve industries — generated from a content layer and shared templates, on a Tailwind v4 token design system with no config file.
+<sub>React · Vite · React Router · Tailwind v4 · Cloudflare · GitHub Actions</sub>
+
+### [AITOM](https://ai-tom.com) · AI recruitment marketing site *(professional work)*
+Sole frontend developer — design implementation, architecture, build and deployment of the marketing website. The recruitment product it markets was built by others.
+<sub>React · Vite · React Router · Tailwind · Vercel</sub>
+
+<sub>¹ Measured on Apple silicon against an isolated instance with a 14-symbol catalogue — a lab benchmark, not production telemetry.</sub>
+
+---
+
+## What I work with
+
+**Frontend** — React · TypeScript · Next.js · Vite · Redux Toolkit · TanStack Query · Tailwind · MUI
+**Backend** — Node.js · Express · REST · Socket.IO · WebRTC · SSE · JWT/RBAC · multi-tenancy
+**Data** — MongoDB · PostgreSQL · Prisma · Mongoose · Redis · SQLite · Meilisearch · migrations & indexing
+**Cloud & DevOps** — AWS · Oracle Cloud · Cloudflare · Docker · Terraform · GitHub Actions · Nginx · PM2 · Linux
+**Observability** — Prometheus · Grafana · Loki · structured logging · health checks
 
 ---
 
-## 📚 Learning & Building
+## How I work
 
-- 🔄 [90-day DSA Challenge in JavaScript](https://github.com/ypraveen760/DSA-with-JavaScript)
-- 🧠 GitHub Actions to auto-update progress badges
-- 🧪 Exploring machine learning via JavaScript
+I try to build past the happy path. Before I call something done I want to know what happens when the API fails, whether another tenant can reach this record, what a partial migration leaves behind, how a release rolls back, and what shows up in the logs at 2am.
 
----
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ypraveen760) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/praveen760) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@therookietradersofficial) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ypraveen760@gmail.com) 
+Three of my projects have gone through a deliberate self-audit — going looking for my own mistakes and then writing down what I found. That habit has caught more real problems than any code review I've sat in.
 
-# 💻 Tech Stack:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=plastic&logo=amazon-aws&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=plastic&logo=oracle&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=plastic&logo=bootstrap&logoColor=white) ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=plastic&logo=react) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=plastic&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=plastic&logo=fastapi) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=plastic&logo=mui&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=plastic&logo=nodemon&logoColor=%BBDEAD) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=plastic&logo=react%20query&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=plastic&logo=react-router&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=plastic&logo=redux&logoColor=white) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=plastic&logo=socket.io&badgeColor=010101) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=plastic&logo=nginx&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=plastic&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=plastic&logo=redis&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=plastic&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=plastic&logo=adobe%20photoshop&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=ypraveen760&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=ypraveen760&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ypraveen760&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+Before engineering I spent several years around Nifty options and the markets. It's the reason TheRookieTraders exists and why it refuses to display a number it can't stand behind — but it's domain context, not engineering experience, and I don't count it as such.
 
 ---
-[![](https://visitcount.itsvg.in/api?id=ypraveen760&icon=2&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## Reach me
+
+[![Email](https://img.shields.io/badge/Email-ypraveen760@gmail.com-B4650E?style=flat-square&logo=gmail&logoColor=white)](mailto:ypraveen760@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-praveen760-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/praveen760)
+[![YouTube](https://img.shields.io/badge/YouTube-TheRookieTraders-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@therookietradersofficial)
+
+---
+
+<details>
+<summary>GitHub stats</summary>
+
+![](https://github-readme-stats.vercel.app/api?username=ypraveen760&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=false)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ypraveen760&theme=tokyonight&hide_border=true&layout=compact)
+
+<sub>Most of my substantial work lives in private and company repositories, so public contribution graphs tell only part of the story.</sub>
+
+</details>
